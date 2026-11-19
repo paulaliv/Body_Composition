@@ -11,8 +11,11 @@ import tempfile
 import traceback
 import warnings
 import zipfile
-from typing import Hashable, Tuple
+import sys
 
+print("Python executable:", sys.executable)
+print("Python version:", sys.version)
+from typing import Hashable, Tuple
 import numpy as np
 import pandas as pd
 import pydicom
@@ -279,13 +282,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--info-csv",
-        default=pathlib.Path("Segmentation Info.csv"),
+        default=pathlib.Path(r"C:\Users\P095551\OneDrive - Amsterdam UMC\Documenten\STT\full_body_segmentations\SAROS\Segmentation-Info_09-29-2023.csv"),
         type=pathlib.Path,
         help="Path to the file with the information about the cases.",
     )
     parser.add_argument(
         "--target-dir",
-        default=pathlib.Path("data"),
+        default=pathlib.Path(r"C:\Users\P095551\OneDrive - Amsterdam UMC\Documenten\STT\full_body_segmentations\SAROS\data_nifti"),
         type=pathlib.Path,
         help="Directory path where the downloaded files should be stored. "
         "Defaults to data.",

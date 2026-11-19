@@ -5,11 +5,12 @@ description = ""
 authors = ["Sven Koitka <sven.koitka@uk-essen.de>", "Giulia Baldini <giulia.baldini@uk-essen.de>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-pandas = "^2.0.0"
+python = ">=3.12,<4.0"
+pandas = "^2.2.0"
 requests = "^2.27.1"
-SimpleITK = "^2.1.1"
+SimpleITK = "^2.5.2"
 tqdm = "^4.63.0"
+numpy = "1.26.4"
 pydicom-seg = "^0.4.1"
 pydicom = "^2.3.1"
 p-tqdm = "^1.4.0"
