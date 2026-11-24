@@ -282,13 +282,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--info-csv",
-        default=pathlib.Path(r"C:\Users\P095551\OneDrive - Amsterdam UMC\Documenten\STT\full_body_segmentations\SAROS\Segmentation-Info_09-29-2023.csv"),
+        default=pathlib.Path(r'Segmentation-Info_09-29-2023.csv'),
         type=pathlib.Path,
         help="Path to the file with the information about the cases.",
     )
     parser.add_argument(
         "--target-dir",
-        default=pathlib.Path(r"C:\Users\P095551\OneDrive - Amsterdam UMC\Documenten\STT\full_body_segmentations\SAROS\data_nifti"),
+        default=pathlib.Path(r"C:\Users\paula\Downloads\SAROS_CT_IMAGES"),
         type=pathlib.Path,
         help="Directory path where the downloaded files should be stored. "
         "Defaults to data.",

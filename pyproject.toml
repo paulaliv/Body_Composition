@@ -5,7 +5,7 @@ description = ""
 authors = ["Sven Koitka <sven.koitka@uk-essen.de>", "Giulia Baldini <giulia.baldini@uk-essen.de>"]
 
 [tool.poetry.dependencies]
-python = ">=3.12,<4.0"
+python = ">=3.12,<3.13"
 pandas = "^2.2.0"
 requests = "^2.27.1"
 SimpleITK = "^2.5.2"
